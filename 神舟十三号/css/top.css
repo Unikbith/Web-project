@@ -1,0 +1,75 @@
+/* 清除浏览器默认内、外边距 */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    /* background-color: rgba(173, 218, 255, 0.678); */
+    background: url(../img/背景.png) no-repeat;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.top {
+    height: 50px;
+    /* 设置导航条渐变色背景 */
+    background-image: linear-gradient(to right, rgb(0, 162, 255), rgba(173, 218, 255, 0.678));
+}
+
+.top ul li {
+    line-height: 50px;
+    float: left;
+}
+
+.top ul li a {
+    display: block;
+    padding-left: 50px;
+    padding-right: 15px;
+    font-size: 14px;
+    float: left;
+    transition: all 0.5s;
+}
+
+
+/* 导航右边竖条样式 */
+
+.active-item {
+    border: 3px solid #aaa;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+
+/* 导航条选中样式 */
+
+.active {
+    font-size: 18px !important;
+    color: white;
+}
+
+
+/* 修改当前选中导航后面的竖条颜色 */
+
+.active+.active-item {
+    border-color: red;
+}
+
+.top ul li:hover a {
+    color: white;
+    /* font-size: 18px; */
+    transform: scale(1.2);
+}
+
+.top ul li:hover .active-item {
+    border-color: red;
+}

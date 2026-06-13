@@ -1,0 +1,45 @@
+ .right {
+            margin-left: 0;
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            z-index: -999;
+        }
+        
+.title {
+            font-size: 25px;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+        
+.center {
+            font-size: 20px;
+            background-color: rgba(93, 189, 245, 0.459);
+            height: 300px;
+            width: 700px;
+            border-radius: 10px;
+        }
+        
+.nav img {
+            width: 50px;
+            height: 50px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 999;
+        }
+        
+.nav a {
+            display: inline;
+            height: 50px;
+        }
+        
+.nav-active {
+            border-bottom: 4px solid rgb(157, 157, 253);
+        }
+        
+.nav a:hover {
+            border-bottom: 4px solid red;
+        }

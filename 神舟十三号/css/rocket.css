@@ -1,0 +1,194 @@
+.box img {
+    display: block;
+    transition: transform 0.5s;
+    margin-left: 100px;
+    float: left;
+}
+
+.box p {
+    margin-left: 180px;
+}
+
+.img-item-1 {
+    position: absolute;
+    z-index: 13;
+    top: -9px;
+    left: 2px;
+}
+
+.img-item-2 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 12;
+}
+
+.img-item-3 {
+    position: absolute;
+    top: 53px;
+    left: 2px;
+    z-index: 11;
+}
+
+.img-item-4 {
+    position: absolute;
+    top: 202px;
+    z-index: 10;
+    left: 2px;
+}
+
+.img-item-5 {
+    position: absolute;
+    top: 230px;
+    z-index: 9;
+    left: 1px;
+}
+
+.img-item-6 {
+    position: absolute;
+    top: 252px;
+    z-index: 8;
+    left: 2px;
+}
+
+.img-item-7 {
+    position: absolute;
+    top: 276px;
+    z-index: 7;
+}
+
+.img-item-8 {
+    position: absolute;
+    top: 306px;
+    z-index: 6;
+    left: 1px;
+}
+
+.img-item-9 {
+    position: absolute;
+    top: 360px;
+    z-index: 5;
+    left: 2px;
+}
+
+.img-item-10 {
+    position: absolute;
+    top: 460px;
+    z-index: 4;
+    left: 0;
+}
+
+.img-item-11 {
+    position: absolute;
+    top: 480px;
+    z-index: 3;
+    left: 2px;
+}
+
+.img-item-12 {
+    position: absolute;
+    top: 558px;
+    z-index: 2;
+    left: 4px;
+}
+
+.img-item-13 {
+    position: absolute;
+    top: 590px;
+    z-index: 1;
+    left: 4px;
+}
+
+.box {
+    position: relative;
+}
+
+.box img:hover {
+    transform: scale(1.2);
+}
+
+.box p {
+    width: 200px;
+    background-image: linear-gradient(to right, rgb(0, 162, 255), rgba(173, 218, 255, 0.678));
+}
+
+@keyframes font {
+    0% {
+        opacity: -0.5;
+        width: 0px;
+    }
+    100% {
+        opacity: 1;
+        width: 200px;
+    }
+}
+
+.img-item-1:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-2:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-3:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-4:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-5:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-6:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-7:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-8:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-9:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-10:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-11:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-12:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.img-item-13:hover+.font {
+    display: block;
+    animation: font 1s;
+}
+
+.font {
+    white-space: normal;
+    display: none;
+}

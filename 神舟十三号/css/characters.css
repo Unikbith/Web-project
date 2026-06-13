@@ -1,0 +1,65 @@
+.center {
+    display: flex;
+}
+
+.item {
+    margin-top: 20px;
+    width: 254px;
+    height: 650px;
+    border: 1px solid #aaa;
+    padding: 3px;
+    border-radius: 5px;
+    /* 添加动画过渡 */
+    transition: all 0.5s;
+    background-color: rgba(93, 189, 245, 0.459);
+    color: white;
+}
+
+.title {
+    text-align: center;
+}
+
+.text {
+    font-size: 14px;
+}
+
+
+/* 鼠标移动到item标签向上移动15像素  添加阴影*/
+
+.item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 0px 4px 4px rgb(139, 203, 255);
+}
+
+.banner {
+    position: relative;
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.box-banner {
+    position: absolute;
+    display: flex;
+    /* width: 1800px; */
+}
+
+.box-banner-left {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    border: 20px solid transparent;
+    border-right-color: white;
+    border-left: 0;
+    z-index: 100;
+}
+
+.box-banner-right {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    border: 20px solid transparent;
+    border-left-color: white;
+    border-right: 0;
+    z-index: 99;
+}
